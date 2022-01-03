@@ -1,6 +1,15 @@
 html {
     box-sizing: border-box;
+    
 }
 body {
     font-family: 'Poppins', sans-serif;
+}
+label, input {
+    display: block;
+}
+
+/* Utilities */
+.small-text {
+    font-size: 10px;
 }

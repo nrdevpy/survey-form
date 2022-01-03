@@ -17,7 +17,50 @@
     </head>
 
     <body>
-        
+        <!-- Header -->
+        <header>
+            <div class="header">
+                <h1>Arcane Survey Form</h1>
+                <p>Thank you for taking the time to complete this form</p>
+            </div>
+        </header>
+        <!-- Main -->
+        <main>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+                
+                <label for="age">Age <span class="small-text">(optional)</span></label>
+                <input type="text" id="age" name="age">
+
+                <label>Which is your favorite character from the serie?</label>
+                <select name="chr" id="chr">
+                    <option value="" selected disabled hidden>Select an option</option>
+                    <option value="vi">Vi</option>
+                    <option value="jinx">Jinx</option>
+                    <option value="vander">Vander</option>
+                    <option value="silco">Silco</option>
+                    <option value="ekko">Ekko</option>
+                    <option value="caitlyn">Caitlyn</option>
+                    <option value="jayce">Jayce</option>
+                    <option value="viktor">Viktor</option>
+                    <option value="heimerdinger">Heimerdinger</option>
+                    <option value="singed">Singed</option>
+                </select>
+
+                <p>Would you recommend watch Arcane to a friend?</p>
+
+                <label for="definitely">Definitely</label>
+                <input type="radio" id="definitely" name="recommend">
+                <label for="maybe">Maybe</label>
+                <input type="radio" id="maybe" name="recommend">
+                <label for="not-sure">Not sure</label>
+                <input type="radio" id="not-sure" name="recommend">
+            </form>
+        </main>
     </body>
 
 </html>
