@@ -26,40 +26,77 @@
         </header>
         <!-- Main -->
         <main>
-            <form>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name">
-
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email">
+            <div class="form__div">
+                <form>
+                    <label class="block" for="name">Name</label>
+                    <input
+                        class="block"
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                        placeholder="Enter your name"
+                    >
+                    <label class="block" for="email">Email</label>
+                    <input
+                        class="block"
+                        type="text"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="Enter your email"
+                    >
                 
-                <label for="age">Age <span class="small-text">(optional)</span></label>
-                <input type="text" id="age" name="age">
-
-                <label>Which is your favorite character from the serie?</label>
-                <select name="chr" id="chr">
-                    <option value="" selected disabled hidden>Select an option</option>
-                    <option value="vi">Vi</option>
-                    <option value="jinx">Jinx</option>
-                    <option value="vander">Vander</option>
-                    <option value="silco">Silco</option>
-                    <option value="ekko">Ekko</option>
-                    <option value="caitlyn">Caitlyn</option>
-                    <option value="jayce">Jayce</option>
-                    <option value="viktor">Viktor</option>
-                    <option value="heimerdinger">Heimerdinger</option>
-                    <option value="singed">Singed</option>
-                </select>
-
-                <p>Would you recommend watch Arcane to a friend?</p>
-
-                <label for="definitely">Definitely</label>
-                <input type="radio" id="definitely" name="recommend">
-                <label for="maybe">Maybe</label>
-                <input type="radio" id="maybe" name="recommend">
-                <label for="not-sure">Not sure</label>
-                <input type="radio" id="not-sure" name="recommend">
-            </form>
+                    <label class="block" for="age">Age <span class="small-text">(optional)</span></label>
+                    <input class="block" type="text" id="age" name="age" placeholder="Age">
+                    <label class="block">Which is your favorite character from the serie?</label>
+                    <select name="chr" id="chr">
+                        <option value="" selected disabled hidden>Select an option</option>
+                        <option value="vi">Vi</option>
+                        <option value="jinx">Jinx</option>
+                        <option value="vander">Vander</option>
+                        <option value="silco">Silco</option>
+                        <option value="ekko">Ekko</option>
+                        <option value="caitlyn">Caitlyn</option>
+                        <option value="jayce">Jayce</option>
+                        <option value="viktor">Viktor</option>
+                        <option value="heimerdinger">Heimerdinger</option>
+                        <option value="singed">Singed</option>
+                    </select>
+                    <p>Would you recommend Arcane to a friend?</p>
+                    <input type="radio" id="definitely" name="recommend">
+                    <label for="definitely">Definitely</label>
+                    <input type="radio" id="maybe" name="recommend">
+                    <label for="maybe">Maybe</label>
+                    <input type="radio" id="not-sure" name="recommend">
+                    <label for="not-sure">Not sure</label>
+                    <p>Who would you like to see in Arcane Season 2?</p>
+                    <input type="checkbox" name="Dr.Mundo" id="drmundo">
+                    <label for="drmundo">Dr.Mundo</label>
+                    <br>
+                    <input type="checkbox" name="Warwick" id="warwick">
+                    <label for="warwick">Warwick</label>
+                    <br>
+                    <input type="checkbox" name="Urgot" id="urgot">
+                    <label for="urgot">Urgot</label>
+                    <br>
+                    <input type="checkbox" name="Ezreal" id="ezreal">
+                    <label for="ezreal">Ezreal</label>
+                    <br>
+                    <input type="checkbox" name="Camille" id="camille">
+                    <label for="camille">Camille</label>
+                    <br>
+                    <input type="checkbox" name="Teemo" id="teemo">
+                    <label for="teemo">Teemo</label>
+                    <p>Any comments or suggestions?</p>
+                    <textarea
+                        name="text"
+                        id="text"
+                        placeholder="Enter your comment here..."
+                    ></textarea>
+                    <input type="submit" value="submit">
+                </form>
+            </div>
         </main>
     </body>
 

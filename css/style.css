@@ -2,14 +2,19 @@ html {
     box-sizing: border-box;
     
 }
-body {
+*, *::before, *::after {
     font-family: 'Poppins', sans-serif;
 }
-label, input {
-    display: block;
+textarea {
+    resize: vertical;
+    width: 95%;
+    min-height: 6rem;
 }
 
 /* Utilities */
 .small-text {
     font-size: 10px;
+}
+.block {
+    display: block;
 }
