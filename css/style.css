@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    
+    color: white;
 }
 *, *::before, *::after {
     font-family: 'Poppins', sans-serif;
@@ -11,14 +11,40 @@ textarea {
     min-height: 6rem;
 }
 body {
-    background-image: url("../assets/img/Arcane-bg.webp");
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
+    margin: 0;
 }
+
+h1, h2, h3 {
+    margin: 0;
+}
+
 /* Utilities */
+.container {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .small-text {
     font-size: 10px;
 }
 .block {
     display: block;
+}
+.bg-opacity {
+    background-color: rgba(0, 0, 0, .5);
+}
+.bg-image {
+    background-image: url("../assets/img/Arcane-bg.webp");
+    background-position: 50% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 1rem;
+}
+
+/* BEM */
+.form__div {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+
+    padding: 1rem;
 }
