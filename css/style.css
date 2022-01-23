@@ -17,10 +17,16 @@ body {
 h1, h2, h3 {
     margin: 0;
 }
-
+h1 {
+    padding: 1rem;
+}
+input, select {
+    border: 0;
+    border-radius: 3px;
+}
 /* Utilities */
 .container {
-    width: 95%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -31,7 +37,7 @@ h1, h2, h3 {
     display: block;
 }
 .bg-opacity {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .7);
 }
 .bg-image {
     background-image: url("../assets/img/Arcane-bg.webp");
@@ -39,9 +45,16 @@ h1, h2, h3 {
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 1rem;
-}
 
+    min-height: 100vh;
+}
+.text-center {
+    text-align: center;
+}
 /* BEM */
+/* Header */
+
+/* Form */
 .form__div {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
